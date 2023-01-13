@@ -24,15 +24,33 @@ import csv
 '''
 
 
-with open('kp_data.csv') as f_n:
-    f_n_reader = csv.reader(f_n)
-    for row in f_n_reader:
-        print(row)
+# with open('kp_data.csv') as f_n:
+#     f_n_reader = csv.reader(f_n)
+#     for row in f_n_reader:
+#         print(row)
+#
+# with open('kp_data.csv') as f_n:
+#     f_n_reader = csv.DictReader(f_n)
+#     for row in f_n_reader:
+#         print(row)
 
-with open('kp_data.csv') as f_n:
-    f_n_reader = csv.DictReader(f_n)
-    for row in f_n_reader:
-        print(row)
+# def get_data(dataFiles):
+#     os_prod_list, os_name_list, os_code_list, os_type_list = []
+#     for file in dataFiles:
+#         with open(file) as f_n:
+#             f_n_reader =
+
+
+
+
+def main():
+    dataFiles = ['info_1.txt', 'info_2.txt', 'info_3.txt']
+    get_data(dataFiles)
+
+
+
+if __name__ == "__main__":
+    main()
 
 
 '''
